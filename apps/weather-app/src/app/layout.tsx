@@ -1,4 +1,7 @@
+import { Capriola } from 'next/font/google';
 import './global.css';
+
+const capriola = Capriola({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
   title: 'Welcome to weather-app',
@@ -12,7 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <main
+          className={[capriola.className, 'w-full', 'h-full', 'absolute'].join(
+            ' '
+          )}
+        >
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
