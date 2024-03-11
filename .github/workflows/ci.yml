@@ -47,4 +47,4 @@ jobs:
           git config --global --add safe.directory '*'
           git branch --track main origin/main
       - run: npx nx affected -t lint test build --parallel=3
-      - run: npx nx affected -t e2e --parallel=1
+      - run: HOME=/root npx nx affected -t e2e --parallel=1
