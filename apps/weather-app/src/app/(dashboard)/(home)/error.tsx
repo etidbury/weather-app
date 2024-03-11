@@ -10,6 +10,7 @@ export default function ErrorPage({
 }: {
   error: Error;
   searchParams?: {
+    theme: string;
     location: string;
     unit: 'celcius' | 'fahrenheit';
   };
@@ -22,11 +23,11 @@ export default function ErrorPage({
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 gap-4">
-            <span className="error-message">
-              {error.message ?? 'An unknown error occurred'}
-            </span>
-            <Link href="/search">
-              <Button>Search again</Button>
+            <span className="error-message">Failed to load weather</span>
+            <Link
+              href={`/search?${new URLSearchParams(searchParams).toString()}`}
+            >
+              <Button>Back to Search</Button>
             </Link>
           </div>
         </CardContent>
