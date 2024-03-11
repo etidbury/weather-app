@@ -1,1 +1,5 @@
 node_modules
+
+## SST
+sst-env.d.ts
+.sst/**/*
