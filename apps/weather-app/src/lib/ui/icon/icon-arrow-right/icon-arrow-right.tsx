@@ -20,8 +20,8 @@ export function IconArrowRight(props: IconArrowRightProps) {
       <path
         d="M13 2L20.5 9.5L13 17"
         stroke="#111111"
-        stroke-width="3"
-        stroke-linecap="round"
+        strokeWidth="3"
+        strokeLinecap="round"
       />
     </svg>
   );

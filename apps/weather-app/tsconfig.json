@@ -19,6 +19,7 @@
     "types": ["jest", "node"],
     "baseUrl": ".",
     "paths": {
+      "@lib/sdk/weather-api": ["src/lib/sdk/weather-api"],
       "@lib/actions": ["src/lib/actions"],
       "@lib/config": ["src/lib/config"],
       "@lib/ui/common": ["src/lib/ui/common"],

@@ -11,7 +11,7 @@ export interface InputSearchProps {
   searchParams: URLSearchParams;
 }
 
-export function InputSearch(props: InputSearchProps) {
+export async function InputSearch(props: InputSearchProps) {
   return (
     <form
       className="flex justify-end gap-2 w-full"
