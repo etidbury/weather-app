@@ -20,6 +20,11 @@ export async function InputSearch(props: InputSearchProps) {
     >
       <input
         type="hidden"
+        name="theme"
+        value={props.searchParams.get('theme') ?? ''}
+      />
+      <input
+        type="hidden"
         name="unit"
         value={props.searchParams.get('unit') ?? 'celcius'}
       />

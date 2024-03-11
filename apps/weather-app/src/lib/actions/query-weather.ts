@@ -5,6 +5,11 @@ import { RedirectType, redirect } from 'next/navigation';
 import { z } from 'zod';
 
 const schema = z.object({
+  theme: z
+    .string({
+      invalid_type_error: 'Invalid theme specified',
+    })
+    .optional(),
   location: z.string({
     invalid_type_error: 'Invalid location specified',
   }),
@@ -17,6 +22,7 @@ export async function queryWeather(formData: FormData) {
   const validatedFields = schema.safeParse({
     location: formData.get('location'),
     unit: formData.get('unit'),
+    theme: formData.get('theme'),
   });
 
   if (!validatedFields.success) {
@@ -24,7 +30,7 @@ export async function queryWeather(formData: FormData) {
     throw new Error('Invalid URL');
   } else {
     return redirect(
-      `/?location=${validatedFields.data.location}&unit=${validatedFields.data.unit}`,
+      `/?${new URLSearchParams(validatedFields.data).toString()}`,
       RedirectType.replace
     );
   }

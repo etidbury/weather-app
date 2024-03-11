@@ -6,6 +6,7 @@ export default async function HomePage({
   searchParams,
 }: {
   searchParams?: {
+    theme: string;
     location: string;
     unit: 'celcius' | 'fahrenheit';
   };
