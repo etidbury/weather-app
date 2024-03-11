@@ -5,7 +5,12 @@
     "next/core-web-vitals",
     "../../.eslintrc.json"
   ],
-  "ignorePatterns": ["!**/*", ".next/**/*"],
+  "ignorePatterns": [
+    "!**/*",
+    ".next/**/*",
+    "storybook-static",
+    "node_modules/**/*"
+  ],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],

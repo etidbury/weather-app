@@ -47,3 +47,5 @@ out
 # SST
 .sst
 .open-next
+
+storybook-static
