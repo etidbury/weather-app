@@ -17,7 +17,8 @@ export function ButtonRounded(props: ButtonRoundedProps) {
         'hover:bg-rounded_button',
         'text-rounded_button-foreground',
         'w-12',
-        'h-12'
+        'h-12',
+        'shadow-md'
       )}
     >
       {props.children}
