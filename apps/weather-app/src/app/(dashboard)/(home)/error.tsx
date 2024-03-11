@@ -8,7 +8,7 @@ export default function ErrorPage({
   searchParams,
   error,
 }: {
-  error: any;
+  error: Error;
   searchParams?: {
     location: string;
     unit: 'celcius' | 'fahrenheit';
