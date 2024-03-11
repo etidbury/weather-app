@@ -26,7 +26,7 @@ const preview: Preview = {
   },
   parameters: {
     layout: 'centered',
-    actions: { argTypesRegex: '^on.*' },
+    // actions: { argTypesRegex: '^on.*' },
     backgrounds: {
       // default: 'dark',
     },
@@ -47,14 +47,7 @@ const preview: Preview = {
           themes={['dark', 'light']}
           forcedTheme={theme}
         >
-          <main
-            className={[
-              capriola.className,
-              'w-full',
-              'h-full',
-              'absolute',
-            ].join(' ')}
-          >
+          <main className={[capriola.className].join(' ')}>
             <Story />
           </main>
         </ThemeProvider>

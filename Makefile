@@ -11,12 +11,16 @@ dev: ### Run development environment
 	npx nx run weather-app:dev
 
 .PHONY: test
-test: ### Run unit tests
-	npx nx run weather-app:test
+test: ### Run tests
+	npx nx affected -t lint test build --parallel=3
 	
 .PHONY: e2e
 e2e: ### Run E2E tests
 	npx nx run weather-app-e2e:e2e
+
+.PHONY: reset
+reset: ### Run reset
+	npx nx reset
 
 
 .PHONY: help

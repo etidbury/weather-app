@@ -49,3 +49,5 @@ out
 .open-next
 
 storybook-static
+
+.env

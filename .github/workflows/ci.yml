@@ -6,10 +6,10 @@ on:
   pull_request:
     branches: [dev, main]
 
-
-
 jobs:
   main:
+    env:
+      WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
     runs-on: ubuntu-latest
     permissions:
       actions: read

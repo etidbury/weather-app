@@ -55,6 +55,25 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        /*--------extended shadcn theme--------*/
+        sidebar: {
+          DEFAULT: 'hsl(var(--sidebar))',
+          foreground: 'hsl(var(--sidebar-foreground))',
+        },
+        rounded_button: {
+          DEFAULT: 'var(--rounded_button)',
+          inactive: 'var(--rounded_button--inactive)',
+          foreground: 'var(--rounded_button-foreground)',
+        },
+        green: {
+          DEFAULT: 'var(--theme-color-green)',
+          foreground: 'var(--theme-color-green)',
+        },
+        yellow: {
+          DEFAULT: 'var(--theme-color-yellow)',
+          foreground: 'var(--theme-color-yellow)',
+        },
+        /*-------/extended shadcn theme--------*/
       },
       borderRadius: {
         lg: `var(--radius)`,
