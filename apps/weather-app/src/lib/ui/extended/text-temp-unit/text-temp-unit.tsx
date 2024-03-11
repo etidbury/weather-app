@@ -16,7 +16,7 @@ export function TextTempUnit(props: TextTempUnitProps) {
   return (
     <span className={props.className}>
       <span className="font-bold">{props.temp}</span>
-      <span className="text-gray-50">{tempUnitText}</span>
+      <span className="dark:text-gray-50">{tempUnitText}</span>
     </span>
   );
 }
