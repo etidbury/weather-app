@@ -17,9 +17,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main
-          className={[capriola.className, 'w-full', 'h-full', 'absolute'].join(
-            ' '
-          )}
+          className={[
+            capriola.className,
+            'w-full',
+            'h-full',
+            'absolute',
+            'overflow-x-hidden',
+          ].join(' ')}
         >
           {children}
         </main>
