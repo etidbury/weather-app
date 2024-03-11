@@ -16,5 +16,6 @@ const SAMPLE_WEATHER_CONDITION = SAMPLE_RESPONSE__WEATHER.days[0];
 export const Primary: Story = {
   args: {
     weatherCondition: SAMPLE_WEATHER_CONDITION,
+    tempUnit: 'celcius',
   },
 };

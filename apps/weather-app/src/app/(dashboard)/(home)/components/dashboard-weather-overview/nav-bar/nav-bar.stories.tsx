@@ -10,5 +10,7 @@ export default meta;
 type Story = StoryObj<typeof NavBar>;
 
 export const Primary: Story = {
-  args: {},
+  args: {
+    searchParams: new URLSearchParams(''),
+  },
 };

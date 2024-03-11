@@ -9,5 +9,7 @@ export default meta;
 type Story = StoryObj<typeof TextTempUnit>;
 
 export const Primary: Story = {
-  args: {},
+  args: {
+    tempUnit: 'celcius',
+  },
 };

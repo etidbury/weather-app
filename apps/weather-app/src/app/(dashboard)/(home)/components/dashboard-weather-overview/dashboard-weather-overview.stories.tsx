@@ -14,5 +14,7 @@ export const Primary: Story = {
   },
   args: {
     weatherData: SAMPLE_RESPONSE__WEATHER,
+    tempUnit: 'celcius',
+    searchParams: new URLSearchParams(''),
   },
 };

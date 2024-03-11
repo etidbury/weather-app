@@ -13,5 +13,6 @@ type Story = StoryObj<typeof SectionMultiDayForecast>;
 export const Primary: Story = {
   args: {
     forecastDays: SAMPLE_RESPONSE__WEATHER.days,
+    tempUnit: 'celcius',
   },
 };
