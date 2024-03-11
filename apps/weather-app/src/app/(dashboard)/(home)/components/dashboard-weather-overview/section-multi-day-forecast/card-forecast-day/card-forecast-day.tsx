@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { formatDateEpochToFriendly } from '@lib/util';
 import { Card, CardHeader, CardContent, CardFooter } from '@lib/ui/common';
-import { WEATHER_ICONS, IconWeather } from '@lib/ui/icon';
+import { IconWeather } from '@lib/ui/icon';
 import { DashboardWeatherOverviewProps } from '../../dashboard-weather-overview';
 import { TextTempUnit } from '@lib/ui/extended';
 
@@ -28,8 +28,8 @@ export function CardForecastDay(props: CardForecastDayProps) {
         </span>
       </CardHeader>
       <CardContent className="flex flex-col items-center">
-        <IconWeather icon={WEATHER_ICONS.CLOUDY_DAY_1} size={200} />
-        <span className="">{props.weatherCondition.conditions}</span>
+        <IconWeather icon={props.weatherCondition.icon} size={200} />
+        <span>{props.weatherCondition.conditions}</span>
       </CardContent>
 
       <CardFooter className="mt-3">

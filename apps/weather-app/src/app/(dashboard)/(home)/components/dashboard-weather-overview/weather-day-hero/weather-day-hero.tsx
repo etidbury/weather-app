@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { formatDateEpochToFriendly } from '@lib/util';
-import { IconWeather, WEATHER_ICONS } from '@lib/ui/icon';
+import { IconWeather } from '@lib/ui/icon';
 import { DashboardWeatherOverviewProps } from '../dashboard-weather-overview';
 import { TextTempUnit } from '@lib/ui/extended';
 
@@ -27,7 +27,10 @@ export function WeatherDayHero(props: WeatherDayHeroProps) {
       </h1>
       <h2 className="text-2xl">{currentConditionsTimeFriendly}</h2>
       <div className="flex justify-center items-center">
-        <IconWeather icon={WEATHER_ICONS.CLOUDY_DAY_1} size={400} />
+        <IconWeather
+          icon={props.weatherData.currentConditions.icon}
+          size={400}
+        />
       </div>
 
       <TextTempUnit
