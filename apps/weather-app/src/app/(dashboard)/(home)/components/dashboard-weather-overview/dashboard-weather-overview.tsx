@@ -40,7 +40,8 @@ export async function DashboardWeatherOverview(
 
         <h1 className="text-4xl font-bold">Day Overview</h1>
         <SectionBreakdown
-          currentConditions={props.weatherData?.currentConditions}
+          tempUnit={props.tempUnit}
+          weatherData={props.weatherData}
         />
         <SectionMultiDayForecast
           forecastDays={props.weatherData?.days ?? []}

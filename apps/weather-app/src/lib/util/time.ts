@@ -15,3 +15,9 @@ export const formatDateEpochToFriendly = (epoch: number) => {
     return time.format('ddd, D MMM');
   }
 };
+
+export const formatDateEpochToTimeFriendly = (epoch: number) => {
+  const time = dayjs(epoch * 1000);
+
+  return time.format('H:mm');
+};

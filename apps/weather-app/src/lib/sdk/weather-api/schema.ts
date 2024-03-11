@@ -8,6 +8,8 @@ const WeatherCondition = z.object({
   icon: z.string(),
   tempmax: z.number(),
   tempmin: z.number(),
+  sunriseEpoch: z.number(),
+  sunsetEpoch: z.number(),
   humidity: z.number(),
   cloudcover: z.number(),
   description: z.string().optional(),

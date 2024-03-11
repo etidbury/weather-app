@@ -28,15 +28,11 @@ export function CardForecastDay(props: CardForecastDayProps) {
         </span>
       </CardHeader>
       <CardContent className="flex flex-col items-center">
-        <IconWeather icon={WEATHER_ICONS.CLOUDY_DAY_1} size={145} />
-        <TextTempUnit
-          className="text-4xl text-center"
-          temp={props.weatherCondition.temp}
-          tempUnit={props.tempUnit}
-        />
+        <IconWeather icon={WEATHER_ICONS.CLOUDY_DAY_1} size={200} />
+        <span className="">{props.weatherCondition.conditions}</span>
       </CardContent>
 
-      <CardFooter>
+      <CardFooter className="mt-3">
         <div className="flex justify-between w-full">
           <TextTempUnit
             temp={props.weatherCondition.tempmin}
@@ -45,6 +41,7 @@ export function CardForecastDay(props: CardForecastDayProps) {
           <TextTempUnit
             temp={props.weatherCondition.tempmax}
             tempUnit={props.tempUnit}
+            className="opacity-70"
           />
         </div>
       </CardFooter>

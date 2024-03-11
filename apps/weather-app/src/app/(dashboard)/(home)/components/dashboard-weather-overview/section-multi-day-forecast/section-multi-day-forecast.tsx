@@ -29,7 +29,7 @@ export function SectionMultiDayForecast(props: SectionMultiDayForecastProps) {
   }
 
   return (
-    <section className="section-multi-day-forecast">
+    <section className="section-multi-day-forecast pb-5">
       <Carousel>
         <CarouselContent>
           {forecastDaysFormatted.map((forecastDay, index) => {

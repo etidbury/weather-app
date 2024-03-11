@@ -27,7 +27,7 @@ export function WeatherDayHero(props: WeatherDayHeroProps) {
       </h1>
       <h2 className="text-2xl">{currentConditionsTimeFriendly}</h2>
       <div className="flex justify-center items-center">
-        <IconWeather icon={WEATHER_ICONS.CLOUDY_DAY_1} size={200} />
+        <IconWeather icon={WEATHER_ICONS.CLOUDY_DAY_1} size={400} />
       </div>
 
       <TextTempUnit

@@ -3,15 +3,15 @@ import { Card, CardHeader, CardContent } from '@lib/ui/common';
 /* eslint-disable-next-line */
 export interface CardUnitBasicProps {
   title: string;
-  value: string;
+  children: React.ReactNode;
 }
 
 export function CardUnitBasic(props: CardUnitBasicProps) {
   return (
-    <Card>
+    <Card className="py-6">
       <CardHeader className="text-center">{props.title}</CardHeader>
-      <CardContent className="text-center">
-        <span className="text-4xl">{props.value}</span>
+      <CardContent className="text-center text-4xl">
+        {props.children}
       </CardContent>
     </Card>
   );

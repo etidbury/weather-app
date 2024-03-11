@@ -7,7 +7,8 @@ describe('SectionBreakdown', () => {
   it('should render successfully', () => {
     const { baseElement } = render(
       <SectionBreakdown
-        currentConditions={SAMPLE_RESPONSE__WEATHER.currentConditions}
+        weatherData={SAMPLE_RESPONSE__WEATHER}
+        tempUnit='celcius'
       />
     );
     expect(baseElement).toBeTruthy();

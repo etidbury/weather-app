@@ -11,6 +11,6 @@ type Story = StoryObj<typeof CardUnitBasic>;
 export const Primary: Story = {
   args: {
     title: 'Max temp.',
-    value: '25°C',
+    children: '25°C',
   },
 };
