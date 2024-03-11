@@ -12,9 +12,7 @@ export interface DashboardWeatherOverviewProps {
   searchParams: URLSearchParams;
 }
 
-export async function DashboardWeatherOverview(
-  props: DashboardWeatherOverviewProps
-) {
+export function DashboardWeatherOverview(props: DashboardWeatherOverviewProps) {
   if (!props.tempUnit) {
     throw new Error('DashboardWeatherOverview: tempUnit prop is required');
   }
