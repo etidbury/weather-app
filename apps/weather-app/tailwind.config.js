@@ -55,6 +55,17 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        /*--------extended shadcn theme--------*/
+        sidebar: {
+          DEFAULT: 'hsl(var(--sidebar))',
+          foreground: 'hsl(var(--sidebar-foreground))',
+        },
+        rounded_button: {
+          DEFAULT: 'var(--rounded_button)',
+          inactive: 'var(--rounded_button--inactive)',
+          foreground: 'var(--rounded_button-foreground)',
+        },
+        /*-------/extended shadcn theme--------*/
       },
       borderRadius: {
         lg: `var(--radius)`,

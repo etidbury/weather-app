@@ -47,6 +47,23 @@
     --input: 215 27.9% 16.9%;
     --ring: 263.4 70% 50.4%;
   }
+
+  /*--------extended shadcn theme--------*/
+  :root {
+    --sidebar: 234 50% 90%;
+    --sidebar-foreground: 234 5% 10%;
+  }
+  .dark {
+    --card: 234, 32%, 17%; /*#1e213a*/
+
+    --sidebar: 234, 32%, 17%; /*#1e213a*/
+    --sidebar-foreground: 210 20% 98%;
+
+    --rounded_button: #fff;
+    --rounded_button--inactive: #585676;
+    --rounded_button-foreground: #000;
+  }
+  /*-------/extended shadcn theme--------*/
 }
 
 @layer base {
