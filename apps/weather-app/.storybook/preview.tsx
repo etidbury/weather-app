@@ -47,14 +47,7 @@ const preview: Preview = {
           themes={['dark', 'light']}
           forcedTheme={theme}
         >
-          <main
-            className={[
-              capriola.className,
-              'w-full',
-              'h-full',
-              'absolute',
-            ].join(' ')}
-          >
+          <main className={[capriola.className].join(' ')}>
             <Story />
           </main>
         </ThemeProvider>
