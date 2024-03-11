@@ -6,14 +6,14 @@ on:
   pull_request:
     branches: [dev, main]
 
-permissions:
-  actions: read
-  contents: read
 
 
 jobs:
   main:
     runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
     container:
       image: mcr.microsoft.com/playwright:v1.42.1-jammy
     steps:
@@ -41,10 +41,9 @@ jobs:
             node_modules
             ~/.cache/Cypress # needed for the Cypress binary
           key: ${{ steps.cache-dependencies-restore.outputs.cache-primary-key }}
-      - uses: nrwl/nx-set-shas@v3
+      - uses: nrwl/nx-set-shas@v4
       # This line is needed for nx affected to work when CI is running on a PR
-      - run: |
-          git config --global --add safe.directory '*'
-          git branch --track main origin/main
+      - run: git config --system --add safe.directory "$GITHUB_WORKSPACE"
+      - run: git branch --track main origin/main
       - run: npx nx affected -t lint test build --parallel=3
       - run: HOME=/root npx nx affected -t e2e --parallel=1
