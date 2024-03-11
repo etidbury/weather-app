@@ -26,7 +26,7 @@ const preview: Preview = {
   },
   parameters: {
     layout: 'centered',
-    actions: { argTypesRegex: '^on.*' },
+    // actions: { argTypesRegex: '^on.*' },
     backgrounds: {
       // default: 'dark',
     },
