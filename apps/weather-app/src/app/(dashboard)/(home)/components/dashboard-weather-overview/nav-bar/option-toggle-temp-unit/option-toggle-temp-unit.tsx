@@ -13,6 +13,11 @@ export function OptionToggleTempUnit(props: OptionToggleTempUnitProps) {
     <form className="grid grid-cols-2 gap-4" action={queryWeather}>
       <input
         type="hidden"
+        name="theme"
+        value={props.searchParams.get('theme') ?? ''}
+      />
+      <input
+        type="hidden"
         name="location"
         value={props.searchParams.get('location') ?? ''}
       />
