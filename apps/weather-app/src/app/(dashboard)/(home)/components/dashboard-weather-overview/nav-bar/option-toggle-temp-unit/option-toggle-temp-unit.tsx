@@ -10,7 +10,7 @@ export function OptionToggleTempUnit(props: OptionToggleTempUnitProps) {
   const searchParamsUnit = props.searchParams.get('unit');
 
   return (
-    <form className="grid grid-cols-2 gap-4" action={queryWeather}>
+    <form className="grid grid-cols-2 gap-2" action={queryWeather}>
       <input
         type="hidden"
         name="theme"
