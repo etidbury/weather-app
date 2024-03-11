@@ -16,7 +16,12 @@
         "name": "next"
       }
     ],
-    "types": ["jest", "node"]
+    "types": ["jest", "node"],
+    "baseUrl": ".",
+    "paths": {
+      "@lib/util": ["src/lib/util"],
+      "@lib/ui/common": ["src/lib/ui/common"]
+    }
   },
   "include": [
     "**/*.ts",
@@ -35,10 +40,5 @@
     "**/*.test.ts",
     "**/*.stories.ts",
     "**/*.stories.js"
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.storybook.json"
-    }
   ]
 }
