@@ -5,7 +5,11 @@ import CardUnitPercentage from './card-unit-percentage';
 describe('CardUnitPercentage', () => {
   it('should render successfully', () => {
     const { baseElement } = render(
-      <CardUnitPercentage title={''} percentageValue={0} />
+      <CardUnitPercentage
+        title={''}
+        percentageValue={0}
+        progressBarColor={'green'}
+      />
     );
     expect(baseElement).toBeTruthy();
   });

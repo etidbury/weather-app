@@ -65,6 +65,14 @@ module.exports = {
           inactive: 'var(--rounded_button--inactive)',
           foreground: 'var(--rounded_button-foreground)',
         },
+        green: {
+          DEFAULT: 'var(--theme-color-green)',
+          foreground: 'var(--theme-color-green)',
+        },
+        yellow: {
+          DEFAULT: 'var(--theme-color-yellow)',
+          foreground: 'var(--theme-color-yellow)',
+        },
         /*-------/extended shadcn theme--------*/
       },
       borderRadius: {

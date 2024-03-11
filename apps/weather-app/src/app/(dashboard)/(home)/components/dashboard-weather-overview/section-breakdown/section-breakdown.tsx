@@ -28,10 +28,12 @@ export function SectionBreakdown(props: SectionBreakdownProps) {
     <section className="section-breakdown ">
       <div className="grid grid-cols-2 gap-10 items-start">
         <CardUnitPercentage
+          progressBarColor="green"
           title={'Humidity'}
           percentageValue={props.weatherData.currentConditions.humidity}
         />
         <CardUnitPercentage
+          progressBarColor="yellow"
           title={'Cloud Cover'}
           percentageValue={props.weatherData.currentConditions.cloudcover}
         />

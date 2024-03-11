@@ -52,12 +52,22 @@
   :root {
     --sidebar: 234 50% 90%;
     --sidebar-foreground: 234 5% 10%;
+
+    --theme-color-green: #559e0c;
+    --theme-color-yellow: #bcbf00;
+
+    --rounded_button: #fff;
+    --rounded_button--inactive: #eee;
+    --rounded_button-foreground: #000;
   }
   .dark {
     --card: 234, 32%, 17%; /*#1e213a*/
 
     --sidebar: 234, 32%, 17%; /*#1e213a*/
     --sidebar-foreground: 210 20% 98%;
+
+    --theme-color-green: #a9ff53;
+    --theme-color-yellow: #faff00;
 
     --rounded_button: #fff;
     --rounded_button--inactive: #585676;

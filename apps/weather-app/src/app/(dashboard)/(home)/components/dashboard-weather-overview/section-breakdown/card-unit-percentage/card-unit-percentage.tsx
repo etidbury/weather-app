@@ -5,6 +5,7 @@ import { Card, CardHeader, CardContent, ProgressBar } from '@lib/ui/common';
 export interface CardUnitPercentageProps {
   title: string;
   percentageValue: number;
+  progressBarColor: 'green' | 'yellow';
 }
 
 export function CardUnitPercentage(props: CardUnitPercentageProps) {
@@ -20,7 +21,10 @@ export function CardUnitPercentage(props: CardUnitPercentageProps) {
           <div className="flex justify-end">
             <span>%</span>
           </div>
-          <ProgressBar value={props.percentageValue} />
+          <ProgressBar
+            value={props.percentageValue}
+            progressBarColor={props.progressBarColor}
+          />
 
           <div className="flex justify-between">
             <span className="mr-2">0</span>
